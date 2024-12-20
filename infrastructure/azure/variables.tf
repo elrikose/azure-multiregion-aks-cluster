@@ -3,7 +3,7 @@
 variable "application_name" {
   type        = string
   description = "The application name is used for composition of all the resouces in the solution."
-  default     = "voteapp789"
+  default     = "sdmultiregion"
 
   validation {
     condition     = can(regex("^[[:alnum:]]+$", var.application_name))
@@ -14,19 +14,19 @@ variable "application_name" {
 variable "main_location" {
   type        = string
   description = "The location of the Main site."
-  default     = "westus3"
+  default     = "eastus"
 }
 
 variable "failover_location" {
   type        = string
   description = "The location of the Failover site."
-  default     = "canadaeast"
+  default     = "westus"
 }
 
 variable "environment" {
   type        = string
   description = "The keyword to identify te type of Environment that it's being deployed."
-  default     = "prod"
+  default     = "poc"
 }
 
 variable "main_instance" {

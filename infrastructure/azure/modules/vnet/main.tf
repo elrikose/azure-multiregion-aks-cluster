@@ -30,14 +30,14 @@ resource "azurerm_subnet" "jumpbox" {
 
 # Workload Resouces
 
-resource "azurerm_subnet" "voteapp_gateway" {
+resource "azurerm_subnet" "sdmultiregion_gateway" {
   name                 = "subnet-gateway"
   resource_group_name  = var.resource_group_name
   virtual_network_name = azurerm_virtual_network.default.name
   address_prefixes     = ["10.2.0.0/16"]
 }
 
-resource "azurerm_subnet" "voteapp_aks" {
+resource "azurerm_subnet" "sdmultiregion_aks" {
   name                                           = "subnet-aks"
   resource_group_name                            = var.resource_group_name
   virtual_network_name                           = azurerm_virtual_network.default.name
