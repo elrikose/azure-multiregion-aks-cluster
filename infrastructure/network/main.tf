@@ -26,7 +26,7 @@ module "network_main" {
   location            = var.main_location
   environment         = var.environment
   instance            = var.main_instance
-  jumbbox_vm_password = var.jumbbox_vm_password
+  jumpbox_vm_password = var.jumpbox_vm_password
   tags                = local.main_tags
 }
 
@@ -35,6 +35,6 @@ module "network_failover" {
   location            = var.failover_location
   environment         = var.environment
   instance            = var.failover_instance
-  jumbbox_vm_password = var.jumbbox_vm_password
+  jumpbox_vm_password = var.jumpbox_vm_password
   tags                = local.failover_tags
 }

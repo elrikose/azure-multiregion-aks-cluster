@@ -30,7 +30,7 @@ variable "failover_instance" {
   default     = "002"
 }
 
-variable "jumbbox_vm_password" {
+variable "jumpbox_vm_password" {
   type        = string
   description = "The password to connect to the Jumpbox VM"
   default     = "P@ssw0rd.123"

@@ -10,7 +10,7 @@ variable "instance" {
   type = string
 }
 
-variable "jumbbox_vm_password" {
+variable "jumpbox_vm_password" {
   type = string
   sensitive = true
 }
